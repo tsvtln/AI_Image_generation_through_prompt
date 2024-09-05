@@ -33,10 +33,10 @@ input_data = input('Enter your request:\n')
 
 image = pretrained_data(
     input_data,
-    height=512,
-    width=512,
+    height=256,
+    width=256,
     guidance_scale=3.5,
-    num_inference_steps=25,
+    num_inference_steps=50,
     generator=torch.manual_seed(0)
 ).images[0]
 
